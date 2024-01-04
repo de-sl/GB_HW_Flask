@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8ff; /* Белый фон */
+}
+
+h1, h2, h3 {
+    color: #483d8b; /* Сине-фиолетовый заголовок */
+}
+
+a {
+    color: #4169e1; /* Синяя ссылка */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9400d3; /* Фиолетовый при наведении на ссылку */
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4169e1; /* Синий фон заголовка */
+    color: #ffffff; /* Белый текст заголовка */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #9400d3;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+footer {
+    background-color: #483d8b; /* Сине-фиолетовый фон подвала */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}

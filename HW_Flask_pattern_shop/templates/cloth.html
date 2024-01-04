@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Одежда</title>
+
+
+</head>
+<body>
+    {% extends 'basic_index.html' %}
+    {% block title %}
+    {{ super() }} - {{ title }}
+    {% endblock %}
+    {% block content %}
+    <h1>Одежда для тебя</h1>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <img src="photo/cloth1.jpg" alt="Одежда" width="500">
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <p> Dicta id officia quibusdam vel voluptates. Ad
+            adipisci aliquid animi architecto commodi deleniti dolor
+            doloremque facilis fugiat hic illo nam odit officia placeat
+            provident quam quisquam quo reiciendis repudiandae sint suscipit
+            unde, velit voluptatem! </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <p>Ab accusamus delectus et expedita id iste,
+            laboriosam optio quam, recusandae sed veritatis voluptate!
+            Accusamus blanditiis debitis et tempora. Ab architecto asperiores
+            aut consequuntur distinctio earum iusto nihil, non odit quidem
+            soluta veniam.</p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
