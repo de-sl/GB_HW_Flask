@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 
 app = Flask(__name__)
-@app.route('/main/')
+@app.route('/')
 def basic_index():
     context = {"title": "Главная"}
     return render_template("basic_index.html")
