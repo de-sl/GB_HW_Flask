@@ -70,8 +70,8 @@ async def shutdown():
     await database.disconnect()
 
 
-# Заполнение таблиц фейковыми данными
-# =====================================
+# Заполнение таблиц тестовыми данными
+
 
 
 @app.get("/fake_users/{count}")
@@ -122,8 +122,8 @@ async def make_fake_orders(count: int):
 
 
 # Вывод всех значений из таблиц (select all)
-# (Пользователи, Товары, Заказы )
-# ===================================
+
+
 
 
 @app.get("/all_users/", response_model=List[User])
@@ -157,7 +157,7 @@ async def get_all_orders():
 
 
 # Получение одного экземпляра из модели
-# ========================================
+
 
 
 @app.get("/user/{user_id}", response_model=User)
@@ -197,7 +197,7 @@ async def fetch_one_order(order_id: int):
 
 
 # Cоздание одного экземпляра модели
-# =====================================
+
 
 
 @app.post("/users/", response_model=User)
@@ -231,7 +231,7 @@ async def create_order(order: OrderIn):
 
 
 # Изменение (update) экземпляра модели
-# ========================================
+
 
 
 @app.put("/user/{user_id}", response_model=User)
@@ -277,7 +277,7 @@ async def update_order(order_id: int, new_order: OrderIn):
 
 
 # Удаление объекта модели (delete)
-# ====================================
+
 
 
 @app.delete("/users/{user_id}")
